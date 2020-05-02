@@ -6,3 +6,15 @@
 .bg-light .dropdown-item {color: #000!important;}
 
 .busca{margin: 30px 0;}
+
+.card-body {
+    width: 270px;
+    height: 379px;
+}
+.card-img-top {
+    width: 286px;
+    height: 190px;
+}
+.card-text {
+    height: 260px;
+}
