@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <script src="funcoes.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- FAVICON -->
+    <link href="img/favicon.png" rel="shortcut icon">
+    <title>Avaliação De Serviços Prestados</title>
+  </head>
+
+  <body>
+    <div class="row no-gutters">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav justify-content-end">
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Login
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="#">Entrar</a>
+                 <a class="dropdown-item" href="#">Cadastro Usuario</a>
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" href="#">Cadastro Prestador</a>
+               </div>
+             </li>
+            </ul>
+         </div>
+       </nav>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!--<a class="navbar-brand" href="#">Navbar</a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Serviços
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Home Care</a>
+              <a class="dropdown-item" href="#">Saúde</a>
+              <a class="dropdown-item" href="#">Transporte</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Avaliação
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Prestadores</a>
+              <a class="dropdown-item" href="#">Usuarios</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Avalição</title>
+</head>
+ <h1>Sua availação é muito importante pra nós!</h1> <br> <br> 
+    <h2> Deixe aqui sua avaliação em relação aos serviços prestados:</h2> <br>
+
+    <a href="javascript:void(0)" onclick="Avaliar(1)">
+    <img src="img/star0.png" id="s1"></a>
+
+    <a href="javascript:void(0)" onclick="Avaliar(2)">
+    <img src="img/star0.png" id="s2"></a>
+
+    <a href="javascript:void(0)" onclick="Avaliar(3)">
+    <img src="img/star0.png" id="s3"></a>
+
+    <a href="javascript:void(0)" onclick="Avaliar(4)">
+    <img src="img/star0.png" id="s4"></a>
+
+    <a href="javascript:void(0)" onclick="Avaliar(5)">
+    <img src="img/star0.png" id="s5"></a>
+      <p id="rating">0</p>
+    
+    
+    <p> Seu Nome: </p>
+    <input type="text" name="Seu Nome" size="50" maxlength="50" placeholder="Seu Nome aqui" required="">  <br><br> 
+    <p> Nome do Fornecedor: </p>
+    <input type="text" name="Nome do Fornecedor" size="50" maxlength="50" placeholder="Nome do Fornecedor aqui" required=""> <br><br>
+
+    <label>Seu comentário: </label><br>
+    <textarea> Por favor deixe seu comentário! </textarea><br> <br>
+
+    <button onclick="window.location.href = 'comentario-avaliacao-usuario.html';"> Enviar </button>
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
