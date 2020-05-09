@@ -44,7 +44,8 @@ function checkForMatch(string,array){
 }
 //busca os dados que estão no JSON e filtra se necessario
 function busca(area) {
-    $('div').remove(".resultado-prestador")
+    $('div').remove(".resultado-prestador");
+    $(".row-resultado .col-sm").remove();
     var filtrado = []
     if(area != null){
         filtrado = prestadores.filter(prestador => {
