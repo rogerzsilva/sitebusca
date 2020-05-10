@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <script src="funcoes.js"></script>
@@ -9,119 +10,40 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- FAVICON -->
-    <link href="img/favicon.png" rel="shortcut icon">
-    <title>Pagina de Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login</title>
   </head>
   <body>
- <body>
-    <div class="row no-gutters">
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav justify-content-end">
-             <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Login
-               </a>
-               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="#">Entrar</a>
-                 <a class="dropdown-item" href="#">Cadastro Usuario</a>
-                 <div class="dropdown-divider"></div>
-                 <a class="dropdown-item" href="#">Cadastro Prestador</a>
-               </div>
-             </li>
-            </ul>
-         </div>
-       </nav>
-    </div>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div>
+    <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!--<a class="navbar-brand" href="#">Navbar</a>-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Serviços
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Home Care</a>
-              <a class="dropdown-item" href="#">Saúde</a>
-              <a class="dropdown-item" href="#">Transporte</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Avaliação
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Prestadores</a>
-              <a class="dropdown-item" href="#">Usuarios</a>
-          </li>
-        </ul>
-      </div>
-    </nav> 
-    <br> <br>
+      <div class="row">
+        <div class="col-4"></div>
 
-<form>
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-1 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-1 col-form-label">Senha</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3">
-    </div>
-  </div>
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-1 pt-0">Primeira Vez Aqui</legend>
-      <div class="col-sm-10">
-         <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Sim
-        </label>
-        </div>
-    </div>
+  <form class="px-4 py-3 text-center border border-dark">
+
+    <span>Login</span>
+    <hr>
+    <div class="form-group">
       
-  </fieldset>
-  <div class="form-group row">
-    <div class="col-sm-2">Lembrar Senha</div>
-    <div class="col-sm-10">
+      <input type="email" class="form-control col 4" id="exampleDropdownFormEmail1" placeholder="email ou id">
+    </div>
+    <div class="form-group">
+      
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+    </div>
+    <div class="form-group">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Sempre
-        </label>
+        
+        
       </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
-  </div>
-</form>
+    <button type="submit" class="btn btn-primary" style="float: right;">Enviar</button>
+  </form>
+  
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-</body>
+  </body>
 </html>
