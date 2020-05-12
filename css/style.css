@@ -101,3 +101,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 
 .fundobanner {background-color: #091f2e;}
+
+.h3{
+    color: #0d05fc;
+}
