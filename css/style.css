@@ -7,6 +7,26 @@
     color: #fff!important;
 }
 
+.textocentro{background-color: teal;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    font-family: 'minion pro';
+    font-size: 28px;
+    padding-top: 8PX;
+}
+
+.titulologin{text-align: center;
+             font-family: 'Minion Pro';}
+
+
+.imglogin{
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 .bg-light .dropdown-item {
     color: #000!important;
 }
@@ -28,7 +48,7 @@
     width: 286px;
     height: 190px;
 }
-.card-text {
+.card-text {text-align: justify;
     height: 260px;
 }
 .ml-auto .dropdown-menu {
@@ -89,15 +109,16 @@ select.form-control:not([size]):not([multiple]) {
   .btn-main-md {
     padding: 15px 40px;
     border-radius: 0;
-    background: #00AFEF;
+    background: teal;
     color: #fff;
     outline: none;
     font-size: 0.9375rem;
+    margin-bottom: 10px;
   }
   
   .btn-main-md:hover {
     color: #fff;
-    background: #4682B4;
+    background: rgb(7, 63, 63);
   }
 
 .fundobanner {background-color: #091f2e;}
@@ -105,3 +126,34 @@ select.form-control:not([size]):not([multiple]) {
 .h3{
     color: #0d05fc;
 }
+.card{margin-top: 20px;
+      margin-bottom: 10px;
+
+}
+
+.card-link{color: #5092c6;
+           font-weight: bold;
+
+}
+
+.card-link:hover{color: #0768b3;
+    font-weight: bold;
+
+}
+
+.alert-heading{text-align: center;}
+
+.mb-0{text-align: center;}
+
+.card-title{text-align: center;
+            color: #1f4768;
+            font-weight: bold;
+            font-family: 'Minion Pro';
+}
+
+.borda {margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;}

@@ -3,7 +3,7 @@ let prestadores = [
     {
         "nome":"Psicólogo",
         "atuação":["home care","fisioterapia","medico"],
-        "descricao":"Psicólogos que fazem consultas na sua casa.",
+        "descricao":"Atendimento psicológico home care está disponível para famílias e pessoas que têm dificuldade para se locomover até o consultório, seja por limitações logísticas, clínicas ou físicas. No ambiente domiciliar o psicólogo pode acompanhar a realidade do paciente, analisar as contingências do ambiente em relação ao paciente.",
         "imagem":"psicologoshomecare.jpg",
         "telefone":"(11) 99998-9109",
         "site":"https://www.saidsp.com"
@@ -11,7 +11,7 @@ let prestadores = [
     {
         "nome":"Vacinas",
         "atuação":["saude","vacina","medico"],
-        "descricao":"Médicos que vão até sua casa para aplicar medicamentos.",
+        "descricao":"Médicos que aplicam vacinas em domicílio. Todas nossas vacinas são da mais alta qualidade, isto é, são acelulares, desta forma tem menos probabilidade de provocar reações como febre, edema, entre outras.",
         "imagem":"vacinaemcasa.jpeg",
         "telefone":"(11) 3042-1442",
         "site":"https://beepsaude.com.br/"
@@ -27,10 +27,28 @@ let prestadores = [
     {
         "nome":"Nutricionista",
         "atuação":["nutricionista","home care"],
-        "descricao":"Nutricionistas que fazem consulta em casa.",
+        "descricao":"Atendimento nutricionista domiciliar, gerenciado por profissionais altamente capacitados a realizar um atendimento completo, precedido de avaliação para formulação de um plano alimentar programado de forma individual e personalizado, de acordo com as necessidades nutricionais de cada paciente.",
         "imagem":"nutricionistaemcasa.jpeg",
         "telefone":"(11) 97518-8167",
         "site":"http://www.homeangels.com.br/sp-vilamariana/"
+    },
+
+    {
+        "nome":"Cuidador de Idosos",
+        "atuação":["cuidadores","home care"],
+        "descricao":"Cuidadores profissionais que ajudarão seu familiar idoso nas tarefas. o Cuidador faz para o idoso apenas o que o mesmo não consegue realizar sozinho e incentiva atividades adequadas à sua capacidade atual, mas também está junto quando a limitação é grande, preservando a dignidade do assistido.",
+        "imagem":"cuidadordeidosos.png",
+        "telefone":"(11) 97518-8167",
+        "site":"https://www.prontocare.com.br/"
+    },
+
+    {
+        "nome":"Fonodiaulogia Domiciliar",
+        "atuação":["saude","medico"],
+        "descricao":"A fonoaudiologia domiciliar atua na prevenção e tratamento de patologias relacionadas à comunicação, abrangendo inclusive problemas relacionados à fala e o aperfeiçoamento dos aspectos fonoaudiológicos: da função auditiva periférica, distúrbios do processamento auditivo e da linguagem oral e escrita.",
+        "imagem":"fonoaudiologia.jpg",
+        "telefone":"(11) 3042-1442",
+        "site":"https://www.prontocare.com.br/"
     }
 ];
 //Valida se o que foi enviado, coincide com alguma atuação

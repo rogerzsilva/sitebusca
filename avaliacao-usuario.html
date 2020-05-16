@@ -3,7 +3,7 @@
   <head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
-    <script src="..funcoes.js"></script>
+    <script src="./js/funcoes.js"></script> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <nav class="navbar navbar-expand-lg bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,6 +52,7 @@
             <a class="dropdown-item" href="login.html">Entrar</a>
             <a class="dropdown-item" href="cadastro_usuario.html">Cadastro Usuario</a>
             <a class="dropdown-item" href="cadastro_prestadador.html">Cadastro Prestador</a>
+            <a class="dropdown-item" href="adm.html">Área Restrita</a>
           </div>
         </li>
       </ul>
@@ -62,89 +62,67 @@
       <div class="container">
         <img src="img/banner.jpg" alt="+HUMANOS">
       </div>
-    </div>
-    <section class="banner bg-banner-one">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Content Block -->
+    </div>    
+    
+    <div class="container">
+        <div class="alert alert-primary" role="alert">
+          <h4 class="alert-heading">SUA AVALIAÇÃO É MUITO IMPORTANTE PARA NÓS!</h4>
+          <hr>
+          <p class="mb-0">DEIXE AQUI SUA AVALIAÇÃO EM RELAÇÃO AOS SERVIÇOS RECEBIDOS:</p>
+        </div> <br>
+    
+       
+        
+        <form>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nome Usário</label>
+            <div class="col-sm-10">
+              <input type="name" class="form-control" id="inputEmail3" placeholder="Nome">
+            </div>
           </div>
-        </div>
-      </div>
-    </section> <br>
-    <!-- <div class="row no-gutters busca">
-      <form class="form-inline my-2 my-lg-0 mx-auto">
-        <input class="form-control form-control-lg " type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div> -->
-    <!-- <div class="row no-gutters">
-        <div class="col-12 col-md-10 mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </div>
-    </div> -->
-
-    
-    
-    
-    <div class="alert alert-primary" role="alert">
-      <h4 class="alert-heading">Sua avaliação é muito importante para nós!</h4>
-      <hr>
-      <p class="mb-0">Deixe aqui sua avaliação em relação aos serviços recebidos:</p>
-    </div> <br>
-
-    <a href="javascript:void(0)" onclick="Avaliar(1)">
-    <img src="img/star0.png" id="s1"></a>
-
-    <a href="javascript:void(0)" onclick="Avaliar(2)">
-    <img src="img/star0.png" id="s2"></a>
-
-    <a href="javascript:void(0)" onclick="Avaliar(3)">
-    <img src="img/star0.png" id="s3"></a>
-
-    <a href="javascript:void(0)" onclick="Avaliar(4)">
-    <img src="img/star0.png" id="s4"></a>
-
-    <a href="javascript:void(0)" onclick="Avaliar(5)">
-    <img src="img/star0.png" id="s5"></a>
-    <p id="rating">0</p> <br>
-    
-    <form>
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Nome Usário</label>
-        <div class="col-sm-10">
-          <input type="name" class="form-control" id="inputEmail3" placeholder="Nome">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Nome Fornecedor</label>
-        <div class="col-sm-10">
-          <input type="name" class="form-control" id="inputEmail3" placeholder="Nome">
-        </div>
-      </div>      
-            <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline1">Feminino</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline2">Masculino</label>
-        </div>
-      </fieldset>
-      <div>
-      <label for="exampleFormControlTextarea1">Por favor deixe seu comentário aqui:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>        
-      </div> <br>
-    </form>
-      
-      <button type="button" class="btn btn-primary" onclick="window.location.href = 'comentario-avaliacao-usuario.html';">Enviar</button>
-      
-    
-
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nome Fornecedor</label>
+            <div class="col-sm-10">
+              <input type="name" class="form-control" id="inputEmail3" placeholder="Nome">
+            </div>
+          </div>      
+                <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Feminino</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">Masculino</label>
+            </div>
+          </fieldset>
+          <a href="javascript:void(0)" onclick="Avaliar(1)">
+            <img src="img/star0.png" id="s1"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(2)">
+            <img src="img/star0.png" id="s2"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(3)">
+            <img src="img/star0.png" id="s3"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(4)">
+            <img src="img/star0.png" id="s4"></a>
+        
+            <a href="javascript:void(0)" onclick="Avaliar(5)">
+            <img src="img/star0.png" id="s5"></a>
+            <p id="rating">0</p>
+          <div>
+          <label for="exampleFormControlTextarea1">Por favor deixe seu comentário aqui:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>        
+          </div> <br>
+        </form>
+          
+          <button type="button" class="btn btn-main-md" onclick="window.location.href = 'comentario-avaliacao-usuario.html';">Enviar</button>
+         
+        
+    </div>
 
 
     <!-- JavaScript (Opcional) -->
